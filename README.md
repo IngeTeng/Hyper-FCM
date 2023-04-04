@@ -6,4 +6,4 @@
 </div>
 <div align="center">Fig.1. The flowchart of an FCN constructed by Hyper-FCM.</div>  
 <br/>
-The <strong>supplementary material</strong> is available at https://github.com/IngeTeng/Hyper-FCM/blob/main/MedIMA-SI.pdf
+The <strong>Supplementary material</strong> is available at https://github.com/IngeTeng/Hyper-FCM/blob/main/MedIMA-SI.pdf
