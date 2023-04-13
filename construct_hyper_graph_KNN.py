@@ -109,7 +109,7 @@ def construct_H_with_Lasso(X, type = 'L1',sp = 0.01,tol = 1e-24):
         x = copy.deepcopy(X)
         x[:, j] = zero_vector
         clf.fit(x, Y)
-        # 列向量
+        # col
         a = clf.coef_
         Am[:, j] = clf.coef_
     return Am
@@ -144,7 +144,7 @@ def _generate_G_from_H(H, variable_weight=False):
     # the degree of the node
     DV = np.sum(H * W, axis=1)
     # the degree of the hyperedge
-    DE = np.sum(H, axis=0)#列元素
+    DE = np.sum(H, axis=0)#col elem
     invDE = np.mat(np.diag(np.power(DE, -1)))
     DV2 = np.mat(np.diag(np.power(DV, -0.5)))
     W = np.mat(np.diag(W))
